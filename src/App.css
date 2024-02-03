@@ -67,7 +67,7 @@ transform: rotate(360deg);
       min-width:300px;
     }
     .input{
-       min-width: 250px; 
+       min-width: 200px; 
        
     }
     .temp{
@@ -78,6 +78,9 @@ transform: rotate(360deg);
     }
     .des{
         font-size: 15px;
+    }
+    .time{
+        font-size: 10px;
     }
    
 
@@ -143,7 +146,7 @@ transform: rotate(360deg);
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    min-width: 300px;
+    min-width: 254px;
 }
 .width{
     display: flex;

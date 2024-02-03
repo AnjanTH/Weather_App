@@ -207,7 +207,7 @@ GeoLocation()
         {weatherData &&  (
           <div>
             <div className="flex items-center justify-center my-6">
-              <p className="text-white text-sm  font-extralight">
+              <p className="text-white text-sm  font-extralight time">
                 {time.toLocaleDateString()} | Local time:-
                 {time.toLocaleTimeString()}
               </p>
@@ -235,7 +235,7 @@ GeoLocation()
             <div className="img-con">
               <img src={humidity} className=" imga" />
             </div>
-            <div className="child">
+            <div className="child m-5">
               <div className="font -light text-md">
                 <div className="flex w-200 h-500 rounded con flex-col justify-center items-center p-5 m-5 child1">
                   <CiTempHigh size={30} color="white" /> Real fell
@@ -259,7 +259,7 @@ GeoLocation()
           </div>
         )}
 
-       {weatherData &&(<div className="flex flex-row items-center justify-center space-x-2  text-sm py-3">
+       {weatherData &&(<div className="flex flex-row items-center justify-center space-x-2  text-sm py-3 my-10">
           
           <FaArrowUp />
           <p className="font-light">
