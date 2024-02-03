@@ -1,0 +1,153 @@
+
+.container{
+   
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    padding: 50px;
+}
+.temp{
+    display: flex;
+    gap: 2rem;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.img-con{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: bisque;
+    background-size: cover;
+    overflow: hidden;
+    animation: slidefromright 1s ease forwards;
+    opacity: 0;
+    
+
+
+}
+
+.imga{
+    width: 100%;
+   height: 100%;
+   
+}
+.city{
+   display: flex;
+   gap: 2rem;
+   justify-content:center ;
+  
+}
+.spinner{
+    border: 4px solid rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(17, 0, 255);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    animation:  spin 1s linear infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+transform: rotate(360deg);
+    }
+}
+@media (max-width:693px) {
+   
+    .city{
+        display: none;
+        background-color: blue;
+    }
+    .container{
+      
+      min-width:300px;
+    }
+    .input{
+       min-width: 250px; 
+       
+    }
+    .temp{
+        flex-direction: column;
+    }
+    .search{
+        width: 50px;
+    }
+    .des{
+        font-size: 15px;
+    }
+   
+
+}
+
+.input{
+    width: 600px;
+  
+}
+.footer{
+   min-width:350px;
+   margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.small{
+    font-size: 15px;
+}
+@media (max-width:565px){
+    .para{
+        font-size: 10px;
+    }
+    .search{
+        width: 50px;
+    }
+}
+.child1{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    width: 300px;
+    animation: slidefromleft 1s ease forwards;
+    opacity: 0;
+    padding: 1rem;
+}
+@keyframes slidefromleft {
+    
+    0%{
+  opacity: 0;
+  transform: translateX(-100%);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slidefromright {
+    
+    0%{
+  opacity: 0;
+  transform: translateX(100%);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.inputbox{
+    display: flex;
+    width: 500px;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+.width{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 1rem;
+}
