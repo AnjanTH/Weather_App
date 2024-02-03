@@ -38,7 +38,7 @@ function App() {
   const handleSearch = async () => {
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city||oncity}&appid=${apiKey}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
       );
 
       if (!response.ok) {
